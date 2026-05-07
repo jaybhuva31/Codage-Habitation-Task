@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    
+    <nav>
+        <h2>Positivus</h2>
+        <div class="nav-right">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Get Started</button>
+        </div>
+    </nav>
+
+    
+    <div class="hero">
+        <h1>Welcome to Positivus</h1>
+        <p>Your trusted partner for innovative solutions and exceptional service</p>
+        <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'});">Explore Services</button>
+    
+    </div>
+
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="section-subtitle">We deliver excellence through innovation and dedication</p>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 16px; line-height: 1.8;">
+            At Positivus, we believe in creating positive impact through our services. With years of experience and a dedicated team, 
+            we help businesses transform and achieve their goals. Our commitment to quality and customer satisfaction sets us apart.
+        </p>
+        
+        
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3>500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-box">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-box">
+                <h3>100%</h3>
+                <p>Satisfaction Rate</p>
+            </div>
+            <div class="stat-box">
+                <h3>24/7</h3>
+                <p>Support Available</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="portfolio" style="background-color: #E8F5E9;">
+        <h2 style="text-align: center;">Our Portfolio</h2>
+        <p class="section-subtitle" style="text-align: center;">Check out our recent projects and achievements</p>
+        <div class="portfolio-container">
+            <div class="portfolio-item"><img src="1.png" alt="Project 1"></div>
+            <div class="portfolio-item"><img src="2.png" alt="Project 2"></div>
+            <div class="portfolio-item"><img src="3.png" alt="Project 3"></div>
+            <div class="portfolio-item"><img src="4.png" alt="Project 4"></div>
+            <!-- <div class="portfolio-item"><img src="5.jpg" alt="Project 5"></div>
+            <div class="portfolio-item"><img src="6.jpg" alt="Project 6"></div> -->
+        </div>
+    </section>
+
+    
+    <section id="services">
+        <h2 style="text-align: center;">Our Services</h2>
+        <p class="section-subtitle" style="text-align: center;">Comprehensive solutions tailored to your needs</p>
+        <div class="services-grid">
+            <div class="service-box">
+                <h4> Service 1</h4>
+                <p>Professional and reliable service designed to meet your specific business requirements and goals.</p>
+                <a href="#">Learn more →</a>
+            </div>
+            <div class="service-box">
+                <h4> Service 2</h4>
+                <p>Innovative solutions that help your business grow and stay ahead of the competition.</p>
+                <a href="#">Learn more →</a>
+            </div>
+            <div class="service-box">
+                <h4> Service 3</h4>
+                <p>Targeted strategies to achieve your business objectives with measurable results.</p>
+                <a href="#">Learn more →</a>
+            </div>
+            <div class="service-box">
+                <h4> Service 4</h4>
+                <p>Creative solutions that bring fresh perspectives and new opportunities to your projects.</p>
+                <a href="#">Learn more →</a>
+            </div>
+            <div class="service-box">
+                <h4> Service 5</h4>
+                <p>Premium quality service backed by our team of experienced professionals.</p>
+                <a href="#">Learn more →</a>
+            </div>
+            <div class="service-box">
+                <h4> Service 6</h4>
+                <p>Fast and efficient solutions that deliver results without compromising on quality.</p>
+                <a href="#">Learn more →</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="pricing" style="background-color: #E8F5E9;">
+        <h2 style="text-align: center;">Pricing Plans</h2>
+        <p class="section-subtitle" style="text-align: center;">Choose the perfect plan for your business</p>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+            We offer flexible pricing options to suit businesses of all sizes. Whether you're just starting or scaling up, 
+            we have a plan that works for you.
+        </p>
+    </section>
+
+    
+    <section id="contact">
+        <h2 style="text-align: center;">Get In Touch</h2>
+        <p class="section-subtitle" style="text-align: center;">We'd love to hear from you. Let's start a conversation!</p>
+        
+        <div class="contact-form">
+            <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you soon.');">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Rahul Kumar">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="rahul@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell us more about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h3>Positivus</h3>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Documentation</a>
+                <a href="#">Guides</a>
+                <a href="#">API Reference</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="mailto:info@positivus.com">info@positivus.com</a>
+                <a href="tel:+1-100-123-4567">+1-100-123-4567</a>
+                <a href="#">Follow us on social media</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Positivus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
